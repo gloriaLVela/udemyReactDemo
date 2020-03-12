@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HighScore from './HighScore';
+import './css/style.css';
 
 class Application extends Component {
     constructor(props) {
@@ -42,8 +43,10 @@ class Application extends Component {
                 <h1>You clicked the button {count} times</h1>
              
                 <HighScore 
+                // overTen={this.state.overTen}
+                // onReset={(e) => this.resetCount(e)}
                 overTen={this.state.overTen}
-                onReset={(e) => this.resetCount(e)}
+                onReset={ this.resetCount}
                 />
                
                 <span>
